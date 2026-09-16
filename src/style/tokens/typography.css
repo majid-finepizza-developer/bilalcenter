@@ -1,0 +1,56 @@
+:root {
+  --font-family-base: "Inter", system-ui, -apple-system, sans-serif;
+
+  /* Logo Title  */
+
+  --font-size-title-lg: 128px;
+  --line-height-title-lg: 128px;
+  --letter-spacing-title-lg: -0.025em;
+
+  /* Display & Headlines */
+  --font-size-display-lg: 56px;
+  --line-height-display-lg: 64px;
+  --letter-spacing-display-lg: -0.025em;
+
+  --font-size-headline-xl: 40px;
+  --line-height-headline-xl: 48px;
+  --letter-spacing-headline-xl: -0.02em;
+
+  --font-size-headline-lg: 32px;
+  --line-height-headline-lg: 40px;
+  --letter-spacing-headline-lg: -0.015em;
+
+  --font-size-headline-md: 24px;
+  --line-height-headline-md: 32px;
+  --letter-spacing-headline-md: -0.01em;
+
+  --font-size-headline-sm: 20px;
+  --line-height-headline-sm: 28px;
+  --letter-spacing-headline-sm: -0.005em;
+
+  /* Body Copies */
+  --font-size-body-lg: 18px;
+  --line-height-body-lg: 28px;
+  --letter-spacing-body-lg: 0em;
+
+  --font-size-body-md: 16px;
+  --line-height-body-md: 24px;
+  --letter-spacing-body-md: 0em;
+
+  --font-size-body-sm: 14px;
+  --line-height-body-sm: 20px;
+  --letter-spacing-body-sm: 0em;
+
+  /* Labels */
+  --font-size-label-lg: 14px;
+  --line-height-label-lg: 20px;
+  --letter-spacing-label-lg: 0.02em;
+
+  --font-size-label-md: 12px;
+  --line-height-label-md: 16px;
+  --letter-spacing-label-md: 0.04em;
+
+  --font-size-label-technical: 11px;
+  --line-height-label-technical: 14px;
+  --letter-spacing-label-technical: 0.08em;
+}

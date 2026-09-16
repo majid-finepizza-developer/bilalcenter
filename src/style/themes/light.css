@@ -1,0 +1,24 @@
+:root,
+[data-theme="light"] {
+  /* Surfaces */
+  --color-background: #f8f9ff;
+  --color-surface: #f8f9ff;
+  --color-surface-dim: #cbdbf5;
+  --color-surface-bright: #f8f9ff;
+
+  /* Surface Container Hierarchy */
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #eff4ff;
+  --color-surface-container: #e5eeff;
+  --color-surface-container-high: #dce9ff;
+  --color-surface-container-highest: #d3e4fe;
+
+  /* On-Surface Colors (Text & Icons) */
+  --color-on-background: #0b1c30;
+  --color-on-surface: #0b1c30;
+  --color-on-surface-variant: #45464d;
+
+  /* Outlines & Dividers */
+  --color-outline: #76777d;
+  --color-outline-variant: #c6c6cd;
+}

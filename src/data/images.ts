@@ -1,0 +1,38 @@
+import logoImg from "../assets/images/logo.png";
+
+export const IMAGES = {
+  logo: logoImg,
+  heroBanner: "",
+  projects: {
+    solarFarm: "",
+  },
+  // Stock photography assets
+  residence:
+    "https://lh3.googleusercontent.com/aida-public/AB6AXuBCJ3srv0AMgCwJbQ9CE022cjgE4bbOgqNOvNF_Y96T8jdPrMcXhr5e92rQBl0IGTrMo404Ev_3KxYTPGqjbalJAe9OwTgpbry8UZBNz6SrSXSPTqb2UeSNWVYlwKo_dFU5FvO8JlapDemDh5ZjAUtImLolacQ4uX74ADm4In8lRI0h3fRQLoH1coURZnl8aZ2shtoos2x4yCJQIV000AAS9ycOHf2JFyWiKBtqOucBhF6FPRTOUnISmA",
+  commercialWarehouse:
+    "https://lh3.googleusercontent.com/aida-public/AB6AXuAq8um41jLjj9fYRJgqCNALnd8vfB4gaNp6Vs12Oi27ID3up7gapJA1GU7d3QIwOeR_z8zVZSOX2u9J_ihBHs316eOlRp24Vz-IYlnCi-y8of_2Lcs9zO-nPxXAfAduQ1SNvuVrW51QOEtG4YLf3QU4Lh9zRw4hkmDK3L4sJuIq37OXCVuhXnJY2_rNjzEzPFASgo0dAc05iI_hUWCheW2FULHacLbHom7QDNVlSZiGRtd3hs33nX_0UQ",
+  agricultural:
+    "https://lh3.googleusercontent.com/aida-public/AB6AXuBGyQkb8eq89dvHsU-O8kHXiak-hyiFb0ReWCvsPcc8dv6-6srFFGEDgo8fAh944e84PxT9BvbKYLz6DtQHdHKubLqkyPOeFg2KRKGbn9ynaNWUGqNTCGXIugCpR5-RM3mqFlZeaSaPAR8tzByGANGXylwRBiJExqYvkyv1_96XI4YjxZoq6gQ3AFiCnHoJQ27jMZ7yX1fBfQtmOVvrfN07Ux0PTZaEbheJGXdgZLBv7MEtyk5fZZiy9Q",
+  storageBattery:
+    "https://lh3.googleusercontent.com/aida-public/AB6AXuBH6dROkPa25Q00BRij3N7v9u-LltCdxq_Ux2wEU1HS0QRA42Jh7sJl_YBAFqLXDkiIF251po3VfGbepSghbioQsmlH1txd-q96k6hGnkxEECcz-AHRzh1cE_x-eMbS5QdUNQ0OaX1Q8k_biuTJbNqwsHkOiaaLcNJWqo5QqTrBqnSgd8phQVfcBLAQnv3ixiX6JBOt3RNlDc3FJojt4aFdQ6uhY2lIvjkEzVhwQhHOq1tJYrzlecfuCg",
+  streetLighting:
+    "https://lh3.googleusercontent.com/aida-public/AB6AXuDfpUdIT_HZhixk3AeubQOLtMuI-fAJfzgfnFRla6eD0GwEt2e-zmhXSBIsbNja2OyJgAEKfPGhwqqhxOsSbrZ5m_VbWP8S29iIOFkUFlIn3Et3mM6sLgTWqfvNXvBrO8zd3M6xAztFj--2lUsNZwaAZ5oe___s_X-A0_YhIInmmiyxu7GaUJI9DxA9e-DscpSaiYtRR9pgp_h7T2R38U2qZUQFU8A7Mk8N-ST_J8aUWwDSNWhfzcExvw",
+  products: {
+    topconModule:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuB4akHJGNJ8RPiBVR6F0zzrxIPOmUkNmaHYKIrCgMBGEl9wVaWHbRB0r0c1VykPqmRRxR__OlWxUOL_SaUhZtF4lc8v1oui7dS1k0H3RWZcAYp1o-czp3L1FlPxJmNBPjFWwWnzW5A_nBhcSaiZpLklGcLLWt48tXs6Oxu4_OxoXLlDV5AOPhc-sbpjZsSb4JrKDp2JAeyoLyDLcUXzB2M5dVSmyoQOQPHXiXEHPT64HXfBswl22KZpuA",
+    hybridInverter:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuAyLo-dWPYlt2fuk5OylsxMAo3fQGVqDC_6AuQMYKctoH2PsoTqtyBg8Ncme28r0lIhIhrRJUzJiaFGnwaqPSca-2pimHSe2eRl_U82CmYOAyVqNrro4-rL0oLhPFMUjfBXtpuwBrwi8AlV4e8v6pop0W47nuax7QcbLhQ1nCG8Y638upM2_r7geLydQBRUMXWH89ghSGKtwCIc_lLtWC9VA32ZSKmlnTZ6fk7_y8Bs-sxsPGkR0qeqAg",
+    lifepo4Battery:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuBCryeqrWSfQf6BQ8ifyf4VIyAJrdAFoZbPtqjI6f0dM740xmwg_01BdW1vZkTsB7-6edToJ4n5bNQQ599hOUVbL_3qBdxcaaEX6jO-LsU2_R2Ygyf1qCCo96nEnrskLB4MF5-euH7cSo3NhuKFLQ1eqRAl_ODrWz5nlp129eKdAI75wROh4javZoj-AKNREZ_hJHjHdi5-zwHfK4SnWDGVNCL7hBplfLOb-5-kLtm-YVySeSPRzR733g",
+    commercialInverter:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuD4o0kmEyoP_Gv_o_B5XLxhuUlUWS5bb6hB_xwz3KKHpFRkt3_efW_AR5Sxz16TMWFUJBfIX2aQfpFGmmQoLksmn6PhQK9NR-wueMS5lo2f8ziZmJXiuo7GrINPPCGYi07bh9zUppZB3S6UNFwB-hMy4mPvn-rrNKaRKcOXTk0QtNL1CtwE1qJAULnzINgzBvB3T9FqUi8REyTWPXXcm_UEJhIH1V-0y_gk7l_MbysbwJZvbHzyT9sDQg",
+    agriVfd:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuDtOmHhBduWme6un0f4-3s_6DuIaQmAz0xYAtJ4aSeurYWoui-N7_8QkTRnJNQntqMkbtEv15Aeo_GA3QL5VACJqkeW1gGjORRaoOIs664Id2oXaVbr_8yumKpUFIAM4PnxtOfHargyxLi3d4HfO31ayLY_oRY_yiX7DlSWJk3na5lzxYsqq2cJXHDOg-6a_bDIspAttMlKY__R8q0Z0rxLbHUJKdDhGxX9U7ZfqIulo5H23KcDTR-ziQ",
+    mountingStructure:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuA8npAKZshxDl9ExG8hn1516oxqzveB6qmFh_0fDc_z_03yAirS8_Q3koaigc99Xt98ziyiydZgfCd8z7UCw8hUHITa9YGd3eBV6Hyx3y6oTFRFrsXOV7XMxLxdyIxC6E6E5xOW3W1WThEd7OmyNRZBpKRzyquLWCXo7I4m26gs4Bd76YI5udNYMuloc2LWRCFKDUYkAjeMo6ugpTxtz8mOBxPlb8qM6XRG67oxoGzZuAgZw5_MbghVTw",
+  },
+  companyLogo:
+    "https://lh3.googleusercontent.com/aida/AEtjO1V2iD5JgcnZGJfAImLpNAy3_QkKvPf5MbIVoGMYFq7uyZk_cNLOMP-WOJlAA5e7aw7W-fofr5XKlB02omSpkOYAxEvuw9dI5ZLZThy-PupJgxptckk_QqOPX9VV7QREV8spHQpKFKD-ccmFNpsyz_9ovBlLmVPgNNEojS4R3iO1h_wkscQD8kgDaQYSrF4g46WANf8GrZjIrG_J28g8yOtd6JjhLfmG-9hw8HZ81rwuM8SVDt9NjRaBEZha",
+} as const;
+
+export type ImagesKey = keyof typeof IMAGES;

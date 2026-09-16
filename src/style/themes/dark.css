@@ -1,0 +1,20 @@
+[data-theme="dark"] {
+  --color-background: #0b1c30;
+  --color-on-background: #f8f9ff;
+  --color-surface: #131b2e;
+  --color-surface-dim: #0b1c30;
+  --color-surface-bright: #213145;
+
+  /* Container Surfaces */
+  --color-surface-container-lowest: #0f172a;
+  --color-surface-container-low: #1e293b;
+  --color-surface-container: #213145;
+  --color-surface-container-high: #2d3e55;
+  --color-surface-container-highest: #384b66;
+
+  /* On-Surface Colors (Text / Foreground) */
+  --color-on-surface: #eaf1ff;
+  --color-on-surface-variant: #94a3b8;
+  --color-outline: #64748b;
+  --color-outline-variant: #334155;
+}

@@ -1,0 +1,25 @@
+:root {
+  /* Spatial Units */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+
+  /* Container Margins & Gutters */
+  --spacing-gutter: 1.5rem;
+  --spacing-gutter-sm: 1rem;
+  --spacing-gutter-lg: 2rem;
+  --spacing-margin: 1rem;
+  --spacing-margin-md: 2rem;
+  --spacing-margin-lg: 4rem;
+
+  /* Section Vertical Padding (consistent across all content sections) */
+  --section-py: 2.5rem;       /* 40px — mobile */
+  --section-py-md: 4rem;      /* 64px — tablet */
+  --section-py-lg: 7rem;      /* 112px — desktop */
+
+  /* Section Inner Content Gap */
+  --section-gap: 2rem;        /* 32px — mobile */
+  --section-gap-lg: 3rem;     /* 48px — desktop */
+}

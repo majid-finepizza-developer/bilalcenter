@@ -1,0 +1,217 @@
+@import "tailwindcss";
+
+/* 1. Design Tokens */
+@import "./tokens/colors.css";
+@import "./tokens/typography.css";
+@import "./tokens/spacing.css";
+@import "./tokens/shapes.css";
+@import "./tokens/elevation.css";
+
+/* 2. Themes */
+@import "./themes/light.css";
+@import "./themes/dark.css";
+
+/* 3. Register Design System Tokens with Tailwind v4 `@theme` Engine */
+@theme {
+  --font-sans: var(--font-family-base);
+
+  /* Colors mapped to functional design variables */
+  --color-primary: var(--color-primary);
+  --color-on-primary: var(--color-on-primary);
+  --color-primary-container: var(--color-primary-container);
+  --color-on-primary-container: var(--color-on-primary-container);
+
+  --color-secondary: var(--color-secondary);
+  --color-on-secondary: var(--color-on-secondary);
+  --color-secondary-container: var(--color-secondary-container);
+  --color-on-secondary-container: var(--color-on-secondary-container);
+
+  --color-tertiary: var(--color-tertiary);
+  --color-on-tertiary: var(--color-on-tertiary);
+  --color-tertiary-container: var(--color-tertiary-container);
+  --color-on-tertiary-container: var(--color-on-tertiary-container);
+
+  --color-surface: var(--color-surface);
+  --color-surface-lowest: var(--color-surface-container-lowest);
+  --color-surface-container: var(--color-surface-container);
+  --color-on-surface: var(--color-on-surface);
+  --color-on-surface-variant: var(--color-on-surface-variant);
+
+  --color-outline: var(--color-outline);
+  --color-outline-variant: var(--color-outline-variant);
+
+  /* Radiuses */
+  --radius-sm: var(--rounded-sm);
+  --radius-DEFAULT: var(--rounded-default);
+  --radius-md: var(--rounded-md);
+  --radius-lg: var(--rounded-lg);
+  --radius-xl: var(--rounded-xl);
+  --radius-full: var(--rounded-full);
+
+  /* Shadows */
+  --shadow-level-1: var(--shadow-level-1);
+  --shadow-level-2: var(--shadow-level-2);
+  --shadow-level-3: var(--shadow-level-3);
+
+  /* Section Spacing */
+  --spacing-section-py: var(--section-py);
+  --spacing-section-py-md: var(--section-py-md);
+  --spacing-section-py-lg: var(--section-py-lg);
+  --spacing-section-gap: var(--section-gap);
+  --spacing-section-gap-lg: var(--section-gap-lg);
+}
+
+/* Base Document Reset */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  font-family: var(--font-family-base);
+  background-color: var(--color-background);
+  color: var(--color-on-background);
+}
+
+/* Numeric Alignment Rules */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* =========================================================================
+   SECTION CONTAINER — Shared inner wrapper for all page sections.
+   Centralizes max-width, horizontal margins, column flow, and gap.
+   ========================================================================= */
+.section-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--spacing-margin);
+  padding-right: var(--spacing-margin);
+  gap: var(--section-gap);
+}
+
+@media (min-width: 768px) {
+  .section-container {
+    padding-left: var(--spacing-margin-md);
+    padding-right: var(--spacing-margin-md);
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-container {
+    padding-left: var(--spacing-margin-lg);
+    padding-right: var(--spacing-margin-lg);
+    gap: var(--section-gap-lg);
+  }
+}
+
+/* =========================================================================
+   TYPOGRAPHY UTILITIES — Single-class shortcuts that apply the full
+   font-family + font-size + line-height + letter-spacing stack from tokens.
+   Use these instead of mixing font-* + text-* Tailwind utilities.
+   ========================================================================= */
+
+/* Section Eyebrow Label */
+.typo-eyebrow {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-label-technical);
+  line-height: var(--line-height-label-technical);
+  letter-spacing: var(--letter-spacing-label-technical);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Section H2 Heading */
+.typo-section-title {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-headline-lg);
+  line-height: var(--line-height-headline-lg);
+  letter-spacing: var(--letter-spacing-headline-lg);
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .typo-section-title {
+    font-size: var(--font-size-headline-xl);
+    line-height: var(--line-height-headline-xl);
+    letter-spacing: var(--letter-spacing-headline-xl);
+  }
+}
+
+/* Section Description Paragraph */
+.typo-section-desc {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-body-sm);
+  line-height: var(--line-height-body-sm);
+  letter-spacing: var(--letter-spacing-body-sm);
+}
+
+@media (min-width: 640px) {
+  .typo-section-desc {
+    font-size: var(--font-size-body-md);
+    line-height: var(--line-height-body-md);
+    letter-spacing: var(--letter-spacing-body-md);
+  }
+}
+
+/* Card / Sub-section Heading (h3) */
+.typo-card-title {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-body-lg);
+  line-height: var(--line-height-body-lg);
+  letter-spacing: var(--letter-spacing-body-lg);
+  font-weight: 700;
+}
+
+@media (min-width: 640px) {
+  .typo-card-title {
+    font-size: var(--font-size-headline-sm);
+    line-height: var(--line-height-headline-sm);
+    letter-spacing: var(--letter-spacing-headline-sm);
+  }
+}
+
+/* Card Body Text */
+.typo-card-body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-body-sm);
+  line-height: var(--line-height-body-sm);
+  letter-spacing: var(--letter-spacing-body-sm);
+}
+
+/* Label Text (buttons, badges, small UI labels) */
+.typo-label {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-label-lg);
+  line-height: var(--line-height-label-lg);
+  letter-spacing: var(--letter-spacing-label-lg);
+  font-weight: 700;
+}
+
+/* Technical / Micro Label */
+.typo-technical {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-label-technical);
+  line-height: var(--line-height-label-technical);
+  letter-spacing: var(--letter-spacing-label-technical);
+}
+
+/* =========================================================================
+   SECTION HEADER — Reusable centered header pattern for sections.
+   ========================================================================= */
+.section-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  max-width: 48rem;
+}
+
+.section-header--center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
