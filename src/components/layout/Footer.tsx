@@ -33,7 +33,7 @@ export const Footer: React.FC = () => {
               </div>
             </div>
 
-            <p className="mt-10 font-body-sm text-body-sm leading-relaxed text-on-primary-container">
+            <p className="my-6 font-body-sm text-body-sm leading-relaxed text-on-primary-container">
               {companyInfo.description}
             </p>
 
@@ -45,10 +45,10 @@ export const Footer: React.FC = () => {
                   <a
                     key={social.label}
                     aria-label={social.label}
-                    className="flex h-11 w-11 items-center justify-center rounded-full bg-inverse-surface text-inverse-on-surface transition-colors hover:bg-secondary-container hover:text-on-primary active:bg-secondary-container"
+                    className="flex h-11 w-11 items-center justify-center rounded-full bg-[var(--color-surface-container-high)] text-[var(--color-on-surface)] border border-[var(--color-outline-variant)] shadow-xs transition-all duration-200 hover:bg-[var(--color-secondary-container)] hover:text-[var(--color-on-secondary-container)] hover:border-[var(--color-secondary-container)] hover:scale-105 active:scale-95"
                     href={social.href}
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="nofollow noopener noreferrer"
                   >
                     <Icon size={20} />
                   </a>

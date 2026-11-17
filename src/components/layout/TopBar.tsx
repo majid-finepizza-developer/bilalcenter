@@ -53,6 +53,8 @@ export const TopBar: React.FC = () => {
                 href={social.href}
                 aria-label={social.label}
                 title={social.label}
+                target="_blank"
+                rel="nofollow noopener noreferrer"
                 className="flex h-6 w-6 sm:h-7 sm:w-7 items-center justify-center rounded-full bg-[var(--color-surface-container-high)] text-[var(--color-on-surface)] border border-[var(--color-outline-variant)] shadow-xs transition-all duration-200 hover:bg-[var(--color-secondary-container)] hover:text-[var(--color-on-secondary-container)] hover:border-[var(--color-secondary-container)] hover:scale-105 active:scale-95"
               >
                 <Icon size={12} />

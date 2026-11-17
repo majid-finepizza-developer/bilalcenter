@@ -18,7 +18,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b border-[var(--color-outline-variant)] bg-[var(--color-surface-container-lowest)] transition-colors duration-200">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-2 sm:px-6">
         {/* Brand Logo: Scaled for smaller mobile screens */}
-        <a href="/" className="flex items-center gap-2 focus:outline-none">
+        <a href={import.meta.env.BASE_URL} className="flex items-center gap-2 focus:outline-none">
           <img
             src={IMAGES.logo}
             alt="Bilal Center Solar Solutions"
